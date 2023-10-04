@@ -1,5 +1,4 @@
 use std::fs;
-use std::fs::read_to_string;
 
 fn main() {
     let Ok(proc_dir) = fs::read_dir("/proc") else {
@@ -13,7 +12,7 @@ fn main() {
     ).collect();
 
     for i in proc_dirs {
-        let comm_file = read_to_string(i.path().join("comm")).unwrap();
+        let comm_file = fs::read_to_string(i.path().join("comm")).unwrap();
         println!("Name: {name}\nPID: {pid}\n",
             pid = i.file_name().to_string_lossy(),
             name = comm_file.strip_suffix('\n').unwrap()
