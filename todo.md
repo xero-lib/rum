@@ -1,6 +1,6 @@
 # Rum **TODO**
 ---
-- [ ] Process list
+- [x] Process list
 - [ ] `nice` priority list
 - [ ] Memory utilization
 - [ ] Processor utilization
