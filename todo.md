@@ -1,6 +1,7 @@
 # Rum **TODO**
 ---
-- [x] Process list
+- [X] Process list
+- [ ] Fix CPU usage reports
 - [ ] `nice` priority list
-- [ ] Memory utilization
+- [X] Memory utilization
 - [ ] Processor utilization
